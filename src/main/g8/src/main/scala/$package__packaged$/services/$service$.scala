@@ -7,11 +7,11 @@ import modux.model.context.Context
 import modux.model.service.Call
 import modux.macros.serializer.SerializationSupport
 
-case class $service$(context: Context) extends Service with SerializationSupport {
+case class $service;format="Camel"$(context: Context) extends Service with SerializationSupport {
 
   override def serviceDef: ServiceDef = {
 
-    namedAs("$service$")
+    namedAs("$service;format="Camel"$")
       .withCalls(
         // use get, post, etc ...
       )
