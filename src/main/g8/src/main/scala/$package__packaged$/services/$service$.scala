@@ -9,11 +9,15 @@ import modux.macros.serializer.SerializationSupport
 
 case class $service$(context: Context) extends Service with SerializationSupport {
 
+  def helloWorld(): Call[Unit, String] = Call.empty{
+    "Hello world!!"
+  }
+
   override def serviceDef: ServiceDef = {
 
     namedAs("$service;format="Camel"$")
-      .withCalls(
-        // use get, post, etc ...
+      .entry(
+        get("/hello", helloWorld _)
       )
   }
 }
