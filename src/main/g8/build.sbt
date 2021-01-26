@@ -1,9 +1,8 @@
 enablePlugins(ModuxPlugin)
 
-ThisBuild / scalaVersion := "2.12.10"
+ThisBuild / scalaVersion := "2.12.13"
 ThisBuild / version := "$version$"
 ThisBuild / organization := "$organization$"
-ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
