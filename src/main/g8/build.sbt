@@ -1,6 +1,6 @@
 enablePlugins(ModuxPlugin)
 
-ThisBuild / scalaVersion := "2.12.13"
+ThisBuild / scalaVersion := "2.13.8"
 ThisBuild / version := "$version$"
 ThisBuild / organization := "$organization$"
 
